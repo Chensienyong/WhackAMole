@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="11">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Level"
+                android:id="@+id/levelView"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=":"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="20"
+                android:id="@+id/levelNumberView"
+                android:textColor="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="11">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Score"
+                android:id="@+id/scoreView"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=":"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="20"
+                android:id="@+id/scoreNumberView"
+                android:textColor="@android:color/holo_green_light" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

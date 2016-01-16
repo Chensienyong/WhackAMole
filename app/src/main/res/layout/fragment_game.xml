@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeffrytandiono.whackomole.GameFragment"
+    android:background="@drawable/field"
+    android:id="@+id/layoutGame" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mole_dead" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/scoreView" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Level 1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/level" />
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:weightSum="3">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/heart1"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/heart2"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/heart3"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/exit"
+                android:id="@+id/exit" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole7"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole8"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole9"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole11"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole12"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
